@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #222;
+    background-color: #f5f5f5;
+}
+header{
+    background-color: #6E1822;
+    color: white;
+    padding: 20px;
+}
+.logo{
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.banner{
+    padding: 40px 20px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+.productos{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tarjetas{
+    background-color: #ddd;
+    border: 1px solid #6E1822;
+    padding: 15 px;
+    margin-bottom: 15px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.rebote{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    transition: trasnform 0.2s ease;
+}
+
+.rebote:active{
+    transform: scale(0.90);
+}
+
+.rebote2{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    transition: trasnform 0.2s ease;
+    position: absolute;
+    left: 500px;
+    bottom: -42px;
+}
+
+.rebote2:active{
+    transform: scale(0.90);
+}
+
+.rebote3{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    transition: trasnform 0.2s ease;
+    position: absolute;
+    left: 950px;
+    bottom: -42px;
+
+}
+
+.rebote3:active{
+    transform: scale(0.90);
+}

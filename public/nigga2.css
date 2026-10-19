@@ -1,0 +1,20 @@
+*{
+    background-color: #6E1822;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.Formulario{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.texto{
+
+    text-align: center;
+}
+
