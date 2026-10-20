@@ -1,9 +1,19 @@
-const productos = require("../models/data/productos.json");
+const productModel = require("../models/productsModel");
 
-const mostrarProductos = (req, res) => {
-    res.render("App", { productos });
-}
+const productController = {
+    mostrarProductos: (req, res) => {
+        productModel.obtenerProductos((productos) => {
+            res.render("App", { productos });
+        });
+    },
 
-module.exports = {
-    mostrarProductos
-}
+    mostrarProductoPorId: (req, res) => {
+        const id = req.query.id;
+
+        productModel.obtenerProductoPorId(id, (producto) => {
+            res.render("detalle", { producto });
+        });
+    }
+};
+
+module.exports = productController;

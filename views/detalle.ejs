@@ -1,2 +1,5 @@
 <h1><%=producto.nombre%></h1>
-<img src="c%=producto.imagen%>"
+<img src="<c%=producto.imagen%>"> alt = "<c%=producto.imagen%>">
+
+<p><%= producto.descripcion %></p>
+<p>Precio: <%= producto.precio %></p>
